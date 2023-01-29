@@ -20,12 +20,11 @@ CMD ["python", "countdown_timer.py"]
 
 # Execution Steps
 Build the Docker image using the Dockerfile:
-Copy code
+
   docker build -t countdown_timer .
   
 # Run the Docker container and specify the timer duration using the TIMER_SECONDS environment variable:
-css
-Copy code
+
   docker run --name countdown_timer_container -e TIMER_SECONDS=<duration_in_seconds> countdown_timer
   
 Replace <duration_in_seconds> with the desired timer duration in seconds.
