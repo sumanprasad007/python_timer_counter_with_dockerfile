@@ -1,4 +1,4 @@
-name: Python application
+name: Python application👩‍💻
 
 on:
   push:
@@ -20,14 +20,14 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: "3.10"
-    - name: Install dependencies
+    - name: Install dependencies🕵️‍♀️
       run: |
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
 #     - name: Lint with flake8
-    - name: Checking for the Errors in the code
+    - name: Checking for the Errors in the code📍
       run: |
         # stop the build if there are Python syntax errors or undefined names
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
@@ -50,10 +50,14 @@ jobs:
 # #           push: true
 #           tags: sumanprasad007/python-app:latest
 
-    - name: Build Docker image
+    - name: Build Docker image📜
       run: |
         docker build -t sumanprasad007/python-app:latest .
         
-    - name: Execute Dockerfile
+    - name: Execute Dockerfile☸
       run: |
           docker run sumanprasad007/python-app:latest
+          
+    - name: Successfully run the Docker Container🎉
+      run: | 
+          echo "Congratulations for successfully running the Docker Container for your Python Application"
