@@ -57,6 +57,10 @@ jobs:
     - name: Execute Dockerfile☸
       run: |
           docker run sumanprasad007/python-app:latest
+          container_id=$(docker ps -q --filter ancestor=sumanprasad007/python-app:latest)
+          sleep 5
+          docker stop $container_id
+
           
     - name: Successfully run the Docker Container🎉
       run: | 
