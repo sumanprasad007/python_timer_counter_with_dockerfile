@@ -48,4 +48,4 @@ jobs:
 
     - name: Execute Dockerfile
       run: |
-          docker run -it sumanprasad007/python-app:latest
+          docker run sumanprasad007/python-app:latest
