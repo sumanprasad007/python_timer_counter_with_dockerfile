@@ -36,3 +36,14 @@ jobs:
         pip install pytest
         export PYTHONPATH=countdown_timer.py
         pytest
+        
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v2
+      with:
+          context: .
+          push: true
+          tags: sumanprasad007/python-app:latest
+
+    - name: Execute Dockerfile
+      run: |
+          docker run -it sumanprasad007/python-app:latest
