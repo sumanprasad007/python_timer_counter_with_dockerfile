@@ -60,7 +60,7 @@ jobs:
           container_id=$(docker ps -q --filter ancestor=sumanprasad007/python-app:latest)
           sleep 5
           docker stop $container_id
-
+          echo "Container Stopped as per the timeslot provided"
           
     - name: Successfully run the Docker Container🎉
       run: | 
