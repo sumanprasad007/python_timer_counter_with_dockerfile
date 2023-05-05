@@ -13,23 +13,18 @@ jobs:
 
       - run: python countdown_timer.py
 
-    test:
-      docker:
-        - image: cimg/python:3.11
+      # Run the test cases
+      - run:
+          name: Run test cases
+          command: python -m unittest.py
 
-      steps:
-        - checkout
-        - run: python unittest.py
-
-      # - run:
-      #     name: Run tests
-      #     command: pytest
 
 workflows:
+  version: 2
   build_and_test:
     jobs:
       - build
-      - test
+      # - test
       # - test:
           # requires:
           #   - build
