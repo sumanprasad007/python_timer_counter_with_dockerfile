@@ -12,7 +12,7 @@ jobs:
           command: pip install -r requirements.txt
 
       - run: python countdown_timer.py
-      
+
     test:
       docker:
         - image: cimg/python:3.11
@@ -26,11 +26,9 @@ jobs:
       #     command: pytest
 
 workflows:
-  version: 2
   build_and_test:
     jobs:
       - build
-    
       - test:
           requires:
             - build
