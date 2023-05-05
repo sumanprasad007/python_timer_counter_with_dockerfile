@@ -12,7 +12,8 @@ jobs:
           command: pip install -r requirements.txt
 
       - run: python countdown_timer.py
-    build:
+      
+    test:
       docker:
         - image: cimg/python:3.11
 
