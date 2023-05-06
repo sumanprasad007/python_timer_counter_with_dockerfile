@@ -5,10 +5,15 @@ This is a Python script that implements a countdown timer. The timer duration ca
 Requirements
 Docker
 Dockerfile
-# The following is the Dockerfile that can be used to build a Docker image for the countdown timer script:
+Pytest
+CricleCI
 
-bash
-Copy code
+# CI/CD Pipeline Archtiecture using CircleCI
+
+![image](https://user-images.githubusercontent.com/55047333/236610288-85498f63-6402-456f-8874-f29967e27867.png)
+
+
+# The following is the Dockerfile that can be used to build a Docker image for the countdown timer script:
 
 FROM python:3.8-slim-buster
 
