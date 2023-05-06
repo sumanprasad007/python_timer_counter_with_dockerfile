@@ -16,7 +16,7 @@ jobs:
       # Run the test cases
       - run:
           name: Run test cases
-          command: python -m unittest.py
+          command: python -m test.py
 
 
 workflows:
