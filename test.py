@@ -21,3 +21,4 @@ def test_environment_variable(capsys):
     captured = capsys.readouterr()
     assert "stop\n" in captured.out
     assert "Successfully, run the timer🎉" in captured.out
+    

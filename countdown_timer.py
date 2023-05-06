@@ -14,3 +14,4 @@ num = int(os.environ.get("TIMER_SECONDS", 5))
 print("Counter is running for:", num, "seconds⏰")
 countdown(num)
 print("Successfully, run the timer🎉")
+
