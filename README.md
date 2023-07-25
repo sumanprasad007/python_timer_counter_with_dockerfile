@@ -45,13 +45,13 @@ Instructions for setting up and running CircleCI for the Python project we've be
 https://github.com/sumanprasad007/python_timer_counter_with_dockerfile.git 
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683348228748/f0f7768f-11d6-4395-9519-c82cdd645149.png align="center")
+![image](https://github.com/sumanprasad007/python_timer_counter_with_dockerfile/assets/55047333/f9dd08f7-8d31-45ff-826c-427e14955671)
 
 ## **🔹** Step 1: Create a CircleCI Account
 
 First, you need to create a CircleCI account if you don't already have one. You can sign up for a free account on the CircleCI website using your GitHub or Bitbucket credentials.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683347652989/bc2be392-7da1-477d-8bc7-5d6ffce3f610.png align="center")
+![image](https://github.com/sumanprasad007/python_timer_counter_with_dockerfile/assets/55047333/dd887f12-e010-4b37-bd2a-eda68d47b6e4)
 
 ## **🔹** Step 2: Set up the Project
 
@@ -59,7 +59,7 @@ Once you've created your account, you'll need to add your Python project to Circ
 
 Next, select the repository containing your Python project and click "Set Up Project" to begin the configuration process.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683347712832/b0c758a7-9377-4dea-a669-9945d6527b72.png align="center")
+![image](https://github.com/sumanprasad007/python_timer_counter_with_dockerfile/assets/55047333/4306569f-fe80-4abb-bcc4-ad9bae6b7521)
 
 ## **🔹** Step 3: Configure the Project
 
@@ -67,13 +67,13 @@ After selecting your project, you'll need to create a configuration file for Cir
 
 Copy the code into a new file named `.circleci/config.yml` in the root directory of your project. Save the file and commit it to your repository.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683347757768/2f972e49-04a3-4853-8fc3-f9facbb286c5.png align="center")
+![image](https://github.com/sumanprasad007/python_timer_counter_with_dockerfile/assets/55047333/3b688615-1b78-4607-bc54-ea75cc12ee21)
 
 ## **🔹** Step 4: Run the Build
 
 With the configuration file in place, CircleCI will automatically start building your Python project whenever changes are pushed to the repository. You can view the build logs in the CircleCI dashboard by clicking on the job name under the "Jobs" tab.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683347799149/115489bd-5049-4f27-86b2-35afbc86db7c.png align="center")
+![image](https://github.com/sumanprasad007/python_timer_counter_with_dockerfile/assets/55047333/80454b65-a32e-47e4-975b-30e7e06f8a82)
 
 ### **⚜ Understanding the Code**
 
@@ -103,7 +103,7 @@ workflows:
 
 The code is written in YAML format and consists of two main sections: `jobs` and `workflows`.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683347827159/e5dfe7a5-049c-4c0e-93c7-995debcbb36c.png align="center")
+![image](https://github.com/sumanprasad007/python_timer_counter_with_dockerfile/assets/55047333/5ead1f8f-304a-411b-be9e-755e63911d04)
 
 ### **⚜ Jobs**
 
@@ -155,7 +155,7 @@ To further optimize your development process, you can also add automated tests t
 
 When you push changes to the repository, CircleCI will now run your tests as part of the build process, ensuring that your code is thoroughly validated before being deployed to production.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683347846705/8d636af5-b60f-4ed5-807e-d7949d5c55b1.png align="center")
+![image](https://github.com/sumanprasad007/python_timer_counter_with_dockerfile/assets/55047333/90a261a7-c6ec-44d5-9847-933a9e4cd20e)
 
 # **📍Simplicity of CircleCI**
 
@@ -170,6 +170,7 @@ The platform's intuitive web interface provides real-time build logs, test resul
 CircleCI offers various pricing plans to accommodate different project sizes and requirements. It provides a free tier, which is suitable for personal projects or small teams getting started with continuous integration. The free tier typically includes a limited number of build minutes i.e. 6000 minutes per month and concurrent jobs. For larger projects or teams requiring more resources, CircleCI offers paid plans with increased build minutes, parallelism, and additional features. The pricing is usually based on factors such as the number of users, concurrent jobs, and additional add-ons or support options.
 
 It's important to review the CircleCI pricing page ([**https://circleci.com/pricing**](https://circleci.com/pricing)) for the most up-to-date information on costs and available plans.
+![image](https://github.com/sumanprasad007/python_timer_counter_with_dockerfile/assets/55047333/77735464-0a6f-4952-bc8a-eb97f66ac8ec)
 
 # **📍** Conclusion:
 
